@@ -11,16 +11,5 @@ namespace AuthService.Controllers
         {
 
         }
-
-        [HttpPost("register")]
-        public async Task<IActionResult> Register()
-        {
-        }
-
-        [HttpPost("login")]
-        public async Task<IActionResult> Login()
-        {
-            
-        }
     }
 }
