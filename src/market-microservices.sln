@@ -1,11 +1,43 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35806.99 d17.13
+VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auth", "Auth", "{CD3E40EB-FD69-459F-B2FE-1C7765541847}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService", "Services\Auth\AuthService\AuthService.csproj", "{9A77B0EB-05E1-4DCC-8579-24721B572A37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auth.Api", "Auth.Api", "{895A4E16-D8CE-442C-9377-599D99540D58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auth.Domain", "Auth.Domain", "{6CECFF41-13C6-4FC9-BC0E-5AEC5DA170A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auth.Application", "Auth.Application", "{F845758B-5430-43A7-BC43-C0BA554D7BC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auth.Infrastructure", "Auth.Infrastructure", "{4E8F1E35-41A9-416F-8EB9-5A2396CEECDB}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A77B0EB-05E1-4DCC-8579-24721B572A37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A77B0EB-05E1-4DCC-8579-24721B572A37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A77B0EB-05E1-4DCC-8579-24721B572A37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A77B0EB-05E1-4DCC-8579-24721B572A37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CD3E40EB-FD69-459F-B2FE-1C7765541847} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{9A77B0EB-05E1-4DCC-8579-24721B572A37} = {895A4E16-D8CE-442C-9377-599D99540D58}
+		{895A4E16-D8CE-442C-9377-599D99540D58} = {CD3E40EB-FD69-459F-B2FE-1C7765541847}
+		{6CECFF41-13C6-4FC9-BC0E-5AEC5DA170A6} = {CD3E40EB-FD69-459F-B2FE-1C7765541847}
+		{F845758B-5430-43A7-BC43-C0BA554D7BC1} = {CD3E40EB-FD69-459F-B2FE-1C7765541847}
+		{4E8F1E35-41A9-416F-8EB9-5A2396CEECDB} = {CD3E40EB-FD69-459F-B2FE-1C7765541847}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6B43CC6E-AFC4-47FC-BE27-39ADE3C08D36}
