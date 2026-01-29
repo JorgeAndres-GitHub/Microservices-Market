@@ -1,4 +1,4 @@
-﻿using Interface_Adapters.Models;
+﻿using Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ namespace Interface_Adapters.Auth
 {
     public class AuthResult
     {
-        public UserModel User { get; set; }
+        public User User { get; set; }
         public string Token { get; set; }
         public string RefreshToken { get; set; }
         public bool Result { get; set; }

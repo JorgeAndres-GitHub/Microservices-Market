@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="UseCases\" />
+    <ProjectReference Include="..\..\Auth.Domain\Domain\Domain.csproj" />
   </ItemGroup>
 
 </Project>
